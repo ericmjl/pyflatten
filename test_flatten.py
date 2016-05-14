@@ -1,4 +1,4 @@
-from .flatten import flatten
+from .flattener import flatten
 from random import random
 
 import numpy.random as npr
