@@ -1,2 +1,49 @@
 # flatten
-A utility for flattening nested data structures into an array.
+
+A utility for flattening nested data structures into an array, and providing an "un-flattening" function to get back the original.
+
+# package authors
+
+I dare not take credit for the idea or code. Original heroes are:
+
+- David Duvenaud (Univ. Toronto)
+- Dougal MacLaurin (Harvard)
+- Matt Johnson (Harvard)
+
+I only decided to package this up as an independent, general purpose utility.
+
+# installation
+
+    $ pip install pyflatten
+
+# usage
+
+    In [1]: import numpy.random as npr
+    In [2]: import numpy as np
+    In [3]: from pyflatten import flatten
+    In [4]: paste
+        val = {'k1': npr.randn(4, 4),
+               'k2': npr.randn(3, 3),
+               'k3': 3.0,
+               'k4': [1.0, 4.0, 7.0, 9.0]}
+    ## -- End pasted text --
+    In [5]:     vect, unflatten = flatten(val)
+    In [6]: vect
+    Out[6]:
+    array([-1.20274831,  0.44300699,  0.77940526, -1.40760001,  1.14251971,
+            1.5118117 ,  1.37962866, -1.96744147, -1.14790883,  2.09023223,
+            0.97555019, -0.14938287, -0.86665878,  0.14522684, -3.97717104,
+            1.82750609, -0.1126678 ,  1.70907273,  0.81590652,  0.80267297,
+            1.75690624,  0.54103164,  1.11719463,  2.34272313, -0.44388167,
+            3.        ,  1.        ,  4.        ,  7.        ,  9.        ])
+    In [7]: unflatten(vect)
+    Out[7]:
+    {'k1': array([[-1.20274831,  0.44300699,  0.77940526, -1.40760001],
+            [ 1.14251971,  1.5118117 ,  1.37962866, -1.96744147],
+            [-1.14790883,  2.09023223,  0.97555019, -0.14938287],
+            [-0.86665878,  0.14522684, -3.97717104,  1.82750609]]),
+     'k2': array([[-0.1126678 ,  1.70907273,  0.81590652],
+            [ 0.80267297,  1.75690624,  0.54103164],
+            [ 1.11719463,  2.34272313, -0.44388167]]),
+     'k3': 3.0,
+     'k4': [1.0, 4.0, 7.0, 9.0]}
