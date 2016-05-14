@@ -1,1 +1,1 @@
-from .flattener import flatten
+from .pyflatten import flatten
