@@ -2,7 +2,7 @@
 
 A utility for flattening nested data structures into an array, and providing an "un-flattening" function to get back the original.
 
-# package authors
+## package authors
 
 I dare not take credit for the idea or code. Original heroes are:
 
@@ -12,11 +12,11 @@ I dare not take credit for the idea or code. Original heroes are:
 
 I only decided to package this up as an independent, general purpose utility.
 
-# installation
+## installation
 
     $ pip install pyflatten
 
-# usage
+## usage example
 
     In [1]: import numpy.random as npr
     In [2]: import numpy as np
@@ -47,3 +47,7 @@ I only decided to package this up as an independent, general purpose utility.
             [ 1.11719463,  2.34272313, -0.44388167]]),
      'k3': 3.0,
      'k4': [1.0, 4.0, 7.0, 9.0]}
+
+## contributing
+
+Pull requests are welcome!
