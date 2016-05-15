@@ -21,12 +21,11 @@ install:
   - conda info -a
 
   # Replace dep1 dep2 ... with your dependencies
-  - pip install py.test  
-  - conda create -q -n test-environment python=$TRAVIS_PYTHON_VERSION —-file requirements.txt
+  - pip install pytest  
+  - conda create -q -n build-env —-file requirements.txt python=$TRAVIS_PYTHON_VERSION
   - source activate test-environment
   - python setup.py install
 
 script:
   # Your test script goes here
   - py.test
-
