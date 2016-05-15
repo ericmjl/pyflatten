@@ -22,7 +22,7 @@ install:
 
   # Install Python, py.text, and required packages.
   - pip install pytest  
-  - conda env create -q -n build-env python=$TRAVIS_PYTHON_VERSION
+  - conda create -q -n build-env python=$TRAVIS_PYTHON_VERSION
   - source activate test-environment
   - conda install --yes --file requirements.txt  
   - python setup.py install
