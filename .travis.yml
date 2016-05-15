@@ -22,7 +22,7 @@ install:
 
   # Replace dep1 dep2 ... with your dependencies
   - pip install pytest  
-  - conda create -q -n build-env —f requirements.txt python=$TRAVIS_PYTHON_VERSION
+  - conda env create -q -n build-env —f requirements.txt python=$TRAVIS_PYTHON_VERSION
   - source activate test-environment
   - python setup.py install
 
