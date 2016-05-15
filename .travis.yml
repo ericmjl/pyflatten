@@ -20,10 +20,11 @@ install:
   # Useful for debugging any issues with conda
   - conda info -a
 
-  # Replace dep1 dep2 ... with your dependencies
+  # Install Python, py.text, and required packages.
   - pip install pytest  
-  - conda env create -q -n build-env —f requirements.txt python=$TRAVIS_PYTHON_VERSION
+  - conda env create -q -n build-env python=$TRAVIS_PYTHON_VERSION
   - source activate test-environment
+  - conda install --yes --file requirements.txt  
   - python setup.py install
 
 script:
