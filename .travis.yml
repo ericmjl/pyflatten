@@ -19,10 +19,10 @@ install:
   - conda info -a
 
   # Replace dep1 dep2 ... with your dependencies
+  - pip install pytest setuptools
   - conda create -q -n test-environment python=$TRAVIS_PYTHON_VERSION --file requirements.txt
   - source activate test-environment
   - python setup.py install
-  - pip install pytest
 
 script:
   - py.test
