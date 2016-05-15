@@ -1,0 +1,5 @@
+name: build
+dependencies:
+  - numpy
+  - pip:
+    - pytest
