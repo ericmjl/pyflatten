@@ -22,11 +22,10 @@ install:
 
   # Install Python, py.text, and required packages.
   - pip install pytest  
-  - conda create -f travis-env.yml
+  - conda create --file travis-env.yml
   - source activate build
   - python setup.py install
 
 script:
   # Your test script goes here
   - py.test
-
