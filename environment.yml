@@ -1,0 +1,6 @@
+name: build-test
+dependencies:
+- python=3.5
+- numpy
+- pip:
+  - pytest
