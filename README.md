@@ -1,4 +1,4 @@
-# flatten
+# pyflatten
 
 A utility for flattening nested data structures into an array, and providing an "un-flattening" function to get back the original.
 
