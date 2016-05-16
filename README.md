@@ -6,11 +6,15 @@ A utility for flattening nested data structures into an array, and providing an 
 
 I dare not take credit for the idea or code. Original heroes are:
 
-- David Duvenaud (Harvard, Univ. Toronto)
-- Dougal MacLaurin (Harvard)
-- Matt Johnson (Harvard)
+- [David Duvenaud][1] (Harvard, Univ. Toronto)
+- [Dougal Maclaurin][2] (Harvard)
+- [Matt J. Johnson][3] (Harvard)
 
-I only decided to package this up as an independent, general purpose utility.
+[1]: http://people.seas.harvard.edu/~dduvenaud/
+[2]: http://users.physics.harvard.edu/~maclaurin/
+[3]: http://people.csail.mit.edu/mattjj/
+
+I only decided to package this up as an independent, general purpose utility with David's permission.
 
 ## installation
 
