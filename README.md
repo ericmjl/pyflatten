@@ -2,6 +2,8 @@
 
 A utility for flattening nested data structures into an array, and providing an "un-flattening" function to get back the original.
 
+One potential application of this is in being able to do optimization on complex data structures. Gradient calculations often require a single vector of parameters; flattening a complex data structure enables this.
+
 ## package authors
 
 I dare not take credit for the idea or code. Original heroes are:
