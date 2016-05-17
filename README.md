@@ -18,7 +18,16 @@ I only decided to package this up as an independent, general purpose utility wit
 
 ## installation
 
+From PyPI:
+
     $ pip install pyflatten
+
+To get whatever's the latest:
+
+    $ cd /path/to/some/directory
+    $ git clone git@github.com:ericmjl/pyflatten
+    $ cd pyflatten
+    $ python setup.py develop  # in the future, you can simply git pull to get more latest goodies.
 
 ## usage example
 
