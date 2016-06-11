@@ -4,7 +4,10 @@ Intelligent & Probabilistic Systems Group)
 
 Packaged by: Eric J. Ma (MIT)
 """
-import numpy as np
+try:
+    import autograd.numpy as np
+except ImportError:
+    import numpy as np
 from operator import itemgetter
 
 
