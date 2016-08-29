@@ -1,2 +1,2 @@
 numpy==1.11.1
-setuptools==25.4.0
+setuptools==26.1.0
