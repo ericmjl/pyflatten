@@ -8,4 +8,5 @@ setup(name='pyflatten',
       url='https://github.com/ericmjl/pyflatten',
       license='MIT',
       packages=['pyflatten'],
+      include_package_data=True,
       )
